@@ -54,7 +54,7 @@ function Layout({ children }) {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        const googleLoginUrl = "http://localhost:5000/api/v1/google";
+        const googleLoginUrl = process.env.REACT_APP_API_URL + "/google";
         window.open(googleLoginUrl, "_self");
     };
 
